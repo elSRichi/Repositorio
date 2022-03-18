@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Formularios</title>
+<meta charset="UTF-8"/>
+</head>
+<body>
+
+<h2>Formularios</h2>
+<div style="margin:20px;background-color:lightblue;padding:20px;display:flex;align-items:center;justify-content:center">
+
+<!--para que no se vea en la url method="post"-->
+<form action="/action_page.php" method="get" target="_blank" autocomplete="on">
+
+<table style="border:1px solid black">
+<tr>
+<td> <label for="CTRL_TXT_Nombre">Nombre:</label></td>
+<td><input type="text" id="CTRL_TXT_Nombre" name="nombre" value="Escribeme"/></td>
+</tr>
+
+<tr>
+<td><label for="CTRL_TXT_Apellido">Apellido:</label></td>
+<td><input type="text" id="CTRL_TXT_Apellido" name="apellido" value="Escribeme"/></td>
+</tr>
+
+<!---Password-->
+
+<tr>
+<td><label for="CTRL_TXT_Clave">Clave:</label></td>
+<td><input style="border-radius:10px"type="password" id="CTRL_TXT_Clave" name="clave" value=""/></td>
+</tr>
+
+<tr>
+<td colspan="2" style="text-align:left">
+<span>Sexo:</span><br/>
+<table style="border:1px solid black;margin:0 auto">
+<tr>  
+<td><input type="radio" id="CTRL_TXT_hombre" name="hombre" value="Hombre" >
+  <label for="hombre">HOMBRE</label><br></td>
+<td><input type="radio" id="CTRL_TXT_mujer" name="mujer" value="Mujer" >
+  <label for="mujer">MUJER</label><br></td>
+  <td><input type="radio" id="CTRL_TXT_si" name="si" value="Si, por favor" checked="checked">
+  <label for="si">Si, por favor</label><br></td>
+</tr>
+</table>
+</td>
+<br/>
+</tr>
+<!-----input type="datetime-local" para hora y fecha local--->
+<tr>
+<td colspan="2" style="text-align:center">
+  <label for="fecha">Fecha:</label>
+  <input type="date" id="CTRL_TXT_fecha" name="fecha">
+</td>
+</tr>
+
+<tr>
+<td colspan="2" style="text-align:center">
+  <label for="gmail">Gmail:</label>
+  <input type="email" id="CTRL_TXT_gmail" name="gmail">
+</td>
+</tr>
+
+<tr>
+<td colspan="2" style="text-align:center">
+  <label for="myfile">Cargame:</label>
+  <input type="file" id="CTRL_TXT_myfile" name="myfile">
+</td>
+</tr>
+
+<tr>
+<td colspan="2" style="text-align:center">
+  <label for="favcolor">Color:</label>
+  <input type="color" id="CTRL_TXT_color" name="color">
+</td>
+</tr>
+
+<tr>
+<td colspan="2" style="text-align:center">
+ <label for="quantity">Numero (De 1 a 5):</label>
+  <input type="number" id="CTRL_TXT_quantity" name="quantity" min="1" max="10">
+</td>
+</tr>
+
+<tr>
+<td colspan="2" style="text-align:center">
+  <label for="vol">Porciento (Entre 0 y 100):</label><br/>
+  <input type="range" id="CTRL_TXT_vol" name="vol" min="0" max="100">
+</td>
+</tr>
+
+<tr>
+<td colspan="2" style="text-align:center">
+  <label for="phone">Numero de telf:</label>
+  <input type="tel" id="CTRL_TXT_phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+</td>
+</tr>
+
+
+<tr>
+<td colspan="2" style="text-align:center">
+  <label for="gsearch">Search Google:</label>
+  <input type="search" id="gsearch" name="gsearch">
+</td>
+</tr>
+
+
+<tr>
+<td colspan="2" style="text-align:center">
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" style="text-align:center">
+  <label for="appt">Hora:</label>
+  <input type="time" id="CTRL_TXT_appt" name="appt">
+</td>
+</tr>
+
+<tr>
+<td colspan="2" style="text-align:center">
+  <label for="homepage">URL:</label>
+  <input type="url" id="homepage" name="homepage">
+</td>
+</tr>
+
+<tr>
+<td colspan="2" style="text-align:center">  <input type="submit" value="DAME HUEVON"/>
+<input type="reset" value="Borrar"/>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" style="text-align:center">
+<span>NO TOQUES:</span><input type="button" onclick="alert('PORQUE TOCAS')" value="Messi hazlo">
+</td>
+</tr>
+
+
+
+</table>
+
+
+
+</form>
+</div>
+<p>Si pulsas el boton <span style="font-weight:bold">DAME HUEVON</span> "/action_page.php".</p>
+
+</body>
+</html>
